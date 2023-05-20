@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@700&display=swap");
+
+.pnr-detail {
+  margin-top: 25px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.pnr-status {
+  width: 100%;
+  height: 190px;
+  background-color: white;
+  background-color: #b9eddd;
+
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+  border-radius: 12px;
+  padding: 20px;
+}
+.pnr-status .status-top {
+  display: flex;
+  justify-content: space-between;
+}
+.pnr-status .status-top h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+}
+.pnr-status .status-bottom {
+  margin-top: 10px;
+}
+
+.pnr-status .status-bottom h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 5px 0;
+}
+.pnr-status .status-bottom p {
+  margin: 5px 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #858585;
+}
+.pnr-status .status-bottom .paragraph span:not(:last-child) {
+  margin-right: 3px;
+}
+.passenger-status {
+  width: 100%;
+  min-height: 260px;
+  background-color: white;
+  background-color: #b9eddd;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 12px;
+}
+.passenger-status .top {
+  display: flex;
+  justify-content: space-between;
+}
+.passenger-status .passenger-table {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding-top: 20px;
+}
+.passenger-status .passenger-table table thead tr th {
+  padding-left: 10px;
+  padding-right: 100px;
+  padding-bottom: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #858585;
+}
+.passenger-status .passenger-table table tbody tr td {
+  padding-left: 10px;
+  padding-right: 100px;
+  padding-bottom: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.booking {
+  width: 60%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.booking .train-ticket {
+  width: 48%;
+  min-height: 130px;
+  border-radius: 10px;
+  background-color: #b9eddd;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat";
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.booking .train-ticket .return-ticket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.booking .train-ticket .return-ticket h3 {
+  margin-top: 0;
+  margin-left: 13px;
+  font-weight: 700;
+}
+.booking .train-ticket .ticket-button {
+  width: 70px;
+  height: 40px;
+  background-color: #79e0ee;
+  color: black;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+}
+.booking .train-ticket .train-icon-div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #79e0ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.booking .train-ticket .train-icon {
+  width: 30px;
+  height: 30px;
+}
+.booking .visit {
+  width: 48%;
+  min-height: 130px;
+  border-radius: 10px;
+  background-color: #b9eddd;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.booking .visit .visit-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.booking .visit .visit-left h3 {
+  margin-top: 0;
+  margin-left: 13px;
+  font-weight: 700;
+}
+.booking .visit .irctc-icon {
+  width: 50px;
+  height: 50px;
+  flex-wrap: wrap;
+  background-color: #79e0ee;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+.booking .visit .irctc-icon img {
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden;
+  padding: 4px;
+  z-index: 1;
+}
+.booking .visit button {
+  width: 70px;
+  height: 40px;
+  background-color: #79e0ee;
+  color: black;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+}
+a {
+  color: black;
+  opacity: 0.8;
+}
+@media (max-width: 1040px) {
+  .pnr-detail {
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .passenger-status .passenger-table table thead tr th {
+    padding-left: 15px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #858585;
+  }
+  .passenger-status .passenger-table table tbody tr td {
+    padding-left: 15px;
+    padding-right: 60px;
+    padding-bottom: 15px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .booking {
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 600px) {
+  .pnr-detail {
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pnr-status {
+    width: 100%;
+    height: 190px;
+    background-color: white;
+    background-color: #b9eddd;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+    border-radius: 12px;
+    padding: 15px;
+  }
+  .pnr-status .status-top h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .pnr-status .status-bottom h3 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 5px 0;
+  }
+  .pnr-status .status-bottom p {
+    margin: 5px 0;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #858585;
+  }
+  .passenger-status {
+    width: 100%;
+    min-height: 260px;
+    background-color: white;
+    background-color: #b9eddd;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 12px;
+  }
+  .passenger-status .top h2 {
+    font-size: 20px;
+  }
+  .passenger-status .passenger-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding-top: 17px;
+  }
+  .passenger-status .passenger-table table thead tr th {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 20px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #858585;
+  }
+  .passenger-status .passenger-table table tbody tr td {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .booking {
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .booking .train-ticket {
+    width: 100%;
+    min-height: 130px;
+    border-radius: 10px;
+    background-color: #b9eddd;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat";
+    margin-bottom: 20px;
+  }
+  .booking .visit {
+    width: 100%;
+    min-height: 130px;
+    border-radius: 10px;
+    background-color: #b9eddd;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

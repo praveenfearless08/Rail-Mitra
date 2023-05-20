@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700&family=Satisfy&display=swap");
+.app {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #79e0ee;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 80px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 40px;
+  color: white;
+  background-color: black;
+  height: 60px;
+  transition: transform 0.5s;
+}
+.left-nav {
+  padding-top: 20px;
+
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.right-nav {
+  display: flex;
+  padding-right: 50px;
+  padding-top: 15px;
+  font-family: "Lato", sans-serif;
+  opacity: 0.9;
+}
+.right-nav .logout {
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+.right-nav .logout button {
+  width: 90px;
+  height: 33px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.left-nav p {
+  font-weight: 500;
+  font-size: 18px;
+  padding-left: 30px;
+  opacity: 0.8;
+}
+.left-nav p:hover {
+  color: orange;
+}
+.right-nav p {
+  font-size: 20px;
+  opacity: 0.8;
+}
+.nav-title {
+  color: #1a606b;
+  font-size: 40px;
+  padding: 0px;
+  margin: 0;
+  padding-top: 10px;
+  font-family: "Kalam", cursive;
+  opacity: 1;
+}
+.expand-icon {
+  display: none; /* Hide the expand icon by default */
+}
+
+/* .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  background-color: #b9eddd;
+  margin-top: 120px;
+} */
+.detail {
+  width: 90%;
+  margin-top: 100px;
+  padding-top: 50px;
+  background-color: #b9eddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid white; */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+  border-radius: 10px;
+}
+.detail h1 {
+  /* font-family: "Satisfy", cursive; */
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.detail input {
+  border-radius: 6px;
+  margin: 20px;
+  width: 250px;
+  height: 40px;
+  font-size: 25px;
+  border: 0.5px solid #79e0ee;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.detail input:hover {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+.detail .submit {
+  margin: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+
+  width: 100px;
+  font-size: 20px;
+  height: 50px;
+}
+.detail .submit:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+.detail .reset {
+  margin: 20px;
+  width: 100px;
+  font-size: 20px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+.detail .reset:hover {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+.data {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #79e0ee;
+}
+.data-card {
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17%;
+  height: 120px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+  background-color: #b9eddd;
+}
+.data-card p {
+  font-family: "Lato", sans-serif;
+}
+.data-card p span {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+.nav .right-nav .logout button {
+  background-color: #79e0ee;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.nav .right-nav .logout button:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  background-color: black;
+  color: white;
+  border: 2px solid #79e0ee;
+}
+@media (max-width: 560px) {
+  .data-card {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 832px) {
+  .left-nav {
+    display: none; /* Hide the left and right sections of the navbar */
+  }
+  .nav-title {
+    color: #1a606b;
+    font-size: 26px;
+    padding-top: 15px;
+    padding-left: 7px;
+    font-family: "Kalam", cursive;
+  }
+  .expand-icon {
+    display: block; /* Show the expand icon on smaller screens */
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 2rem;
+  }
+
+  .nav.expanded {
+    /* Modify the navbar styles when expanded */
+    position: relative;
+  }
+
+  .nav.expanded .left-nav {
+    transform: translateX(12px);
+    transform: translateY(15px);
+  }
+
+  .nav.expanded .left-nav {
+    display: flex; /* Show the left and right sections when expanded */
+    flex-direction: column;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 250px;
+    height: 250px;
+    z-index: 1;
+    background-color: black;
+  }
+  .nav.nav.expanded .left-nav p {
+    padding-left: 20px;
+    font-weight: 700;
+    z-index: 1;
+  }
+  .left-nav > p:not(:last-child)::after {
+    content: "";
+    display: block;
+    width: 95%;
+    height: 1px;
+    background-color: #ccc;
+    /* margin: 0 10px; */
+    padding: 0;
+    /* margin-right: 40px; */
+  }
+  .right-nav {
+    position: absolute;
+    padding: 0;
+    top: 15px;
+    right: 10px;
+    padding-right: 0;
+  }
+  .right-nav .user p {
+    font-size: 14px;
+    padding-top: 5px;
+  }
+  .right-nav .logout {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .right-nav .logout button {
+    width: 70px;
+    height: 33px;
+    background-color: #79e0ee;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .nav .right-nav .logout button:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    background-color: black;
+    color: white;
+    border: 0px solid #79e0ee;
+  }
+  .detail .submit {
+    margin: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+
+    width: 80px;
+    font-size: 20px;
+    height: 40px;
+  }
+  .detail .reset {
+    margin: 20px;
+    width: 80px;
+    font-size: 20px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+  }
+}

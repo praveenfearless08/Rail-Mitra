@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Kalam&family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700&display=swap");
+.login-top {
+  height: 100vh;
+  background-color: #79e0ee;
+}
+.login {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #79e0ee;
+  flex-direction: column;
+  padding: 100px;
+}
+.login .title-div {
+  width: 400px;
+  height: 80px;
+  background-color: white;
+  color: #1a606b;
+  border-radius: 15px;
+
+  padding: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login h1 {
+  font-family: "Kalam", cursive;
+
+  font-size: 18px;
+  /* margin-bottom: 40px; */
+}
+.login .title span {
+  font-size: 35px;
+  /* color: #0b272b; */
+}
+.login-card {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #1a606b;
+  border-radius: 20px;
+  align-items: center;
+  padding: 40px;
+}
+.login .login-card h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 40px;
+}
+label {
+  margin-top: 40px;
+  font-family: "Lato";
+  font-size: 20px;
+}
+input {
+  width: 250px;
+  height: 38px;
+  margin-top: 20px;
+  border-radius: 7px;
+  border: 0.5px solid black;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a606b;
+}
+.login-card button {
+  width: 250px;
+  height: 43px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+  margin: 30px;
+}
+.login-card button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  font-size: 25px;
+}
+
+@media (max-width: 650px) {
+  .login h1 {
+    font-family: "Kalam", cursive;
+    font-size: 15px;
+  }
+  .login .title-div {
+    width: 300px;
+    height: 80px;
+  }
+  .login .title span {
+    font-size: 25px;
+    /* color: #0b272b; */
+  }
+  .login-card {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+  }
+  input {
+    width: 220px;
+    height: 70px;
+    font-size: 20px;
+  }
+  .login-card button {
+    width: 220px;
+    height: 100px;
+  }
+}
+@media (max-width: 335px) {
+  .login {
+    min-height: 150vh;
+    display: flex;
+    align-items: center;
+    background-color: #79e0ee;
+    flex-direction: column;
+  }
+  .login .title-div {
+    width: 250px;
+    height: 80px;
+  }
+  .login h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    /* margin-bottom: 50px; */
+  }
+  .login .title span {
+    font-size: 20px;
+    /* color: #0b272b; */
+  }
+  .login-card {
+    width: 250px;
+    height: 280px;
+    padding: 10px;
+    margin: 0;
+  }
+  input {
+    width: 180px;
+    height: 60px;
+    font-size: 20px;
+  }
+  .login-card button {
+    width: 200px;
+    height: 80px;
+  }
+}
